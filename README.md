@@ -1,7 +1,8 @@
 # Custom CPI & Grocery Budget Analysis
 
-[Monthly total grocery basket trend (2019–2024)](pictures/total_budget_change.pdf)  
-*[View chart (PDF)](pictures/total_budget_change.pdf) · [Analysis framework (PDF)*](pictures/mind_map.pdf)
+![Monthly total grocery basket trend (2019–2024)](pictures/total_budget_change_1.png)
+
+![Analysis framework](pictures/mind_map.png)
 
 ## Table of Contents
 
@@ -25,7 +26,7 @@ Link: [Grocery Budget.ipynb](Grocery%20Budget.ipynb)
 
 - **Source**: [Statistics Canada — Monthly average retail prices for selected products](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024501)
 - **Repo data**: [data/](data/) — includes `Monthly_average_retail_prices_for_selected_products.csv`, `increase_decrease_total_change.csv`, `pirovted_beef_data.csv`, and derived budget/change tables.
-- **Visuals**: [pictures/](pictures/) — [Total budget trend (PDF)](pictures/total_budget_change.pdf), [Beef products (PDF)](pictures/beef_products.pdf), [Mind map / framework (PDF)](pictures/mind_map.pdf).
+- **Pictures** (used in this README): [pictures/](pictures/) — `total_budget_change_1.png`, `total_budget_change_2.png`, `beef_products.png`, `mind_map.png`.
 
 ## Objective
 
@@ -106,17 +107,22 @@ pivoted_data.to_csv('pirovted_beef_data.csv', index=True)  # feed into Power BI
 
 ## Executive Summary
 
-Over the **April 2019–April 2024** period, the total cost of a fixed “one basket” of grocery items increased by **28.2%**: from about **$515** to about **$660** per month. Of the 60 months in the sample, **31** saw month-over-month increases and **20** saw decreases (9 unchanged)—so the trend is clearly upward, with noticeable volatility.
+This analysis explores grocery budget trends, price drivers, and basket-level change over a 5-year period (April 2019–April 2024).
 
-**View:** [Monthly total budget and percent change (PDF)](pictures/total_budget_change.pdf)
+**Key findings:** Over this period, the total cost of a fixed “one basket” of grocery items increased by **28.2%**: from about **$515** to about **$660** per month. Of the 60 months in the sample, **31** saw month-over-month increases and **20** saw decreases (9 unchanged)—so the trend is clearly upward, with noticeable volatility.
+
+![Monthly total budget and percent change](pictures/total_budget_change_1.png)  
+*Monthly total budget and percent change.*
 
 The **monthly total budget** series shows a step-up during 2020–2021 and again in 2022–2023, with short pullbacks in between. This supports the idea that grocery spending for a fixed basket has risen in a way that matters for everyday budgeting.
 
-**View:** [Increase vs decrease months and total change (PDF)](pictures/total_budget_change.pdf)
+![Increase vs decrease months and total change](pictures/total_budget_change_2.png)  
+*Increase vs decrease months and total change.*
 
 **Product-level analysis** (e.g. beef) shows that some categories are more volatile than others: certain cuts and products drive both the level and the variability of the basket. The SQL work in [sql/product_mean_stdev_min_max_date.sql](sql/product_mean_stdev_min_max_date.sql) summarizes mean price, standard deviation, and min/max dates by product to identify which items contribute most to overall change and risk.
 
-**View:** [Beef product price trends (PDF)](pictures/beef_products.pdf)
+![Beef product price trends](pictures/beef_products.png)  
+*Beef product price trends.*
 
 **Takeaways:**
 
