@@ -1,18 +1,8 @@
 # Custom CPI & Grocery Budget Analysis
 
-![Monthly total grocery basket trend (2019–2024)](pictures/total_budget_change_1.png)
+## Project Planning
 
 ![Analysis framework](pictures/mind_map.png)
-
-## Table of Contents
-
-- [Project Introduction](#project-introduction)
-  - [Code in Jupyter Notebook](#code-in-jupyter-notebook)
-  - [Project Dataset](#project-dataset)
-- [Objective](#objective)
-- [Tools and Technologies Used](#tools-and-technologies-used)
-  - [Code highlights](#code-highlights)
-- [Executive Summary](#executive-summary)
 
 ## Project Introduction
 
@@ -25,8 +15,6 @@ Link: [Grocery Budget.ipynb](Grocery%20Budget.ipynb)
 ### Project Dataset
 
 - **Source**: [Statistics Canada — Monthly average retail prices for selected products](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024501)
-- **Repo data**: [data/](data/) — includes `Monthly_average_retail_prices_for_selected_products.csv`, `increase_decrease_total_change.csv`, `pirovted_beef_data.csv`, and derived budget/change tables.
-- **Pictures** (used in this README): [pictures/](pictures/) — `total_budget_change_1.png`, `total_budget_change_2.png`, `beef_products.png`, `mind_map.png`.
 
 ## Objective
 
